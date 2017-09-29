@@ -1,14 +1,13 @@
-#include <iostream>
 #include <cmath>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
 
 int main() {
 // Вывод числа Пи, округленного до сотых:
-    double roundNumPi;
-    roundNumPi = M_PI;
+    double roundNumPi = M_PI;
     std::cout << "1) Number pi rounded to hundredths:" <<
                  std::setprecision(3) << roundNumPi << std::endl;
     std::cout << "--" << std::endl;
@@ -33,14 +32,12 @@ int main() {
     double a;
     std::cout << "Enter the changeable parameter 'a': ";
     std::cin >> a;
-    double x;
-    x = 12*pow(a, 2) + 7*a - 12;
+    double x = 12*pow(a, 2) + 7*a - 12;
     std::cout << "5) Value of 'x = 12"<< a << "^2 - 7" << a << " - 12' is: "<< x << std::endl;
 // Вычисление значения функции2:
     std::cout << "Enter the changeable parameter 'х': ";
     std::cin >> x;
-    double y;
-    y = 3*pow(x, 3) + 4*pow(x, 3) - 11*x + 1;
+    double y = 3*pow(x, 3) + 4*pow(x, 3) - 11*x + 1;
     std::cout << "5) Value of 'y = 3"<< x <<"^3 + 4" << x << "^2 + 1' is: " << y << std::endl;
     std::cout << "--" << std::endl;
 
@@ -76,8 +73,7 @@ int main() {
     double by;
     std::cout << "Enter B(y): ";
     std::cin >> by;
-    double lengthBtwAB;
-    lengthBtwAB = sqrt(pow((bx-ax), 2) + pow((by-ay), 2));
+    double lengthBtwAB = sqrt(pow((bx-ax), 2) + pow((by-ay), 2));
     std::cout << "8) The length between A(x, y) and B(x, y) is: " << lengthBtwAB << std::endl;
     std::cout << "--" << std::endl;
 
@@ -91,8 +87,7 @@ int main() {
     double height;
     std::cout << "Enter height: ";
     std::cin >> height;
-    double rib;
-    rib = abs(firstSide-secondSide)/2;
+    double rib = abs(firstSide-secondSide)/2;
     rib = sqrt(pow(rib, 2) + pow(height, 2));
     double perimeter;
     perimeter = rib * 2 + a + b;
@@ -116,8 +111,7 @@ int main() {
     std::cout << "Enter side of square: ";
     std::cin >> squareSide;
     volume = pow(squareSide, 3);
-    double squareArea;
-    squareArea = 4 * pow(squareSide, 2);
+    double squareArea = 4 * pow(squareSide, 2);
     std::cout << "11) The volume of square is: " << volume <<
               ". Amd the area of the square is: " << squareArea << std::endl;
     std::cout << "--" << std::endl;
