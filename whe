@@ -1,0 +1,43 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+typedef unsigned long name1; // name64 == unsignet long;
+using name2 = unsignet long; // name64 == unsignet long
+
+void somefuncktion()
+{
+    int a = 10; // При выходе из функции переменная 'а' бесследно исчезает
+    
+    int * p = new int(10); // Мы можем использовать этот объект до тех пор пока мы его сами не уничтожим
+    // .. uszaem p;
+    delete p; // Уничтожение P
+    // top - возвращает последний элемент, не удаляя его (случай стека)
+    // fromt -возвращает первый элемент, не удаляя его(случай очереди)
+    // back - возвращ0ает последний элемент, не удаляя его(случай очереди)
+}
+
+
+int main()
+{
+    struct List
+    {
+        using value_type int; // Лист будет хранить инты
+        
+        struct Node
+        {
+            value_type Data;
+            Node* next;
+            Node* Prev;
+        };
+        
+    Node* Head; // Указка на голову списка
+    node* Tail; // Указка на конец списка  (head)0<->0<->0<->0<->0(tail)
+    };
+    
+    return 0;
+}
